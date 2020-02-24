@@ -53,9 +53,9 @@ class HigherOrderFunctionsExamplesUnitTest {
     val expected = 6
 
     val strings = Seq("bunch of words", "just me", "it")
-    val sumEarnings = strings.foldLeft(0)((acc, x) => acc + x.split(" ").size)
+    val numberOfWords = strings.foldLeft(0)((acc, x) => acc + x.split(" ").size)
 
-    assertEquals(expected, sumEarnings)
+    assertEquals(expected, numberOfWords)
   }
 
   @Test
